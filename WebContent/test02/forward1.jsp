@@ -4,7 +4,9 @@
   request.setCharacterEncoding("utf-8");
   request.setAttribute("id","hong");
   request.setAttribute("pwd", "1234");
+  
   session.setAttribute("name", "홍길동");
+  
   application.setAttribute("email", "hong@test.com");
 %>    
 

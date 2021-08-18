@@ -3,9 +3,12 @@
     isELIgnored="false"  %>
 <%
    request.setCharacterEncoding("UTF-8");
+
    String id= (String)request.getAttribute("id");
    String pwd= (String)request.getAttribute("pwd");
+   
    String name= (String)session.getAttribute("name");
+   
    String email= (String)application.getAttribute("email");
   
 %>   
@@ -23,13 +26,13 @@
       <td width="20%"><b>이메일</b></td>
    </tr>
    <tr align="center">
-      <td><%=id %> </td>
+      <td><%=id %> </td>		<%--표현식으로 값을 출력 --%>
       <td><%=pwd%> </td>
       <td><%=name %> </td>
       <td><%=email %> </td>
    </tr>   
    <tr align="center">
-      <td>${id} </td>
+      <td>${id} </td>			<%-- 자바 코드없이 바인딩된 속성 이름으로 출력 (request 내장객체 사용) --%>
       <td>${pwd} </td>
       <td>${name} </td>
       <td>${email}</td>

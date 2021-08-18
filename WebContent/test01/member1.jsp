@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" 
-    isELIgnored="false"  %>
+    isELIgnored="false"  %>	<!-- EL을 사용하기위해서 설정 -->
 <%
    request.setCharacterEncoding("UTF-8");
    String id=request.getParameter("id");
@@ -23,13 +23,13 @@
       <td width="20%"><b>이메일</b></td>
    </tr>
    <tr align=center>
-      <td><%=id %> </td>
+      <td><%=id %> </td>		<!-- 원론적인 방법 , getParameter("name's value") -->
       <td><%=pwd%> </td>
       <td><%=name %> </td>
       <td><%=email %> </td>
    </tr>   
    <tr align=center>
-      <td>${param.id } </td>
+      <td>${param.id } </td>	<!-- JSP의 표현언어를 위한 내장객체 param.name 사용 -->
       <td>${param.pwd } </td>
       <td>${param.name } </td>
       <td>${param.email }</td>

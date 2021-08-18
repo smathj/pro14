@@ -1,21 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     import="java.util.*, sec01.ex01.*"
     pageEncoding="UTF-8" 
-    isELIgnored="false"  %>
+    isELIgnored="false"  %>	<!-- el을 사용하기위해서 선언 -->
 <%
   request.setCharacterEncoding("UTF-8");
 %>    
 <jsp:useBean  id="m1" class="sec01.ex01.MemberBean"/>
 <jsp:setProperty name="m1" property="*"  />
-<jsp:useBean  id="membersList" class="java.util.ArrayList" />
-<jsp:useBean  id="membersMap" class="java.util.HashMap" />
+<jsp:useBean  id="membersList" class="java.util.ArrayList" />	<%-- ArrayList --%>
+<jsp:useBean  id="membersMap" class="java.util.HashMap" />		<%-- HashMao --%>
 <%	
+   /* memberMap(해쉬맵)에 Key,value를 담는다 */
    membersMap.put("id", "park2");
    membersMap.put("pwd", "4321");
    membersMap.put("name","박지성");
    membersMap.put("email","park2@test.com");
    
    MemberBean m2 = new MemberBean("son", "1234", "손흥민", "son@test.com");
+   
+   /* memberMap(해쉬맵)에 Key,value를 담는다, (ArrayList) */
    membersList.add(m1);
    membersList.add(m2); 
    membersMap.put("membersList",  membersList);  

@@ -6,7 +6,7 @@
    <meta charset="UTF-8">
    <title>회원 가입창</title>
 <body>
-<form method="post"   action="forward2.jsp">
+<form method="post"   action="member6.jsp">	<%-- 예제 사용할때마다 수정 --%>
 <h1  style="text-align:center">회원 가입창</h1>
 <table  align="center">
     <tr>

@@ -6,6 +6,11 @@
 %>    
 <jsp:useBean  id="m" class="sec01.ex01.MemberBean" />
 <jsp:setProperty  name="m" property="*" />
+<%-- 
+[7,8 라인 설명] 
+	memberForm.jsp에서 action을 현재 JSP인 member3.jsp로 설정했을경우
+	input 태그의 name에 맞춰서 자동으로 setter 주입받겠다 라는 내용이다.
+ --%>
 
 <meta  charset=”UTF-8">
 <html>
@@ -22,13 +27,13 @@
      </tr>
      </tr>
      <tr align="center">
-       <td><%=m.getId() %> </td>
+       <td><%=m.getId() %> </td>	<%-- EL 문법으로 Bean을 사용하였다(표현식만가능) --%>
        <td><%=m.getPwd() %></td>
        <td><%=m.getName() %></td>
        <td><%=m.getEmail() %></td>
 </tr>
      <tr align="center">
-       <td>${m.id } </td>
+       <td>${m.id } </td>			<%-- ${} 표현 언어로 Bean을 사용하였따 --%>
        <td>${m.pwd} </td>
        <td>${m.name }</td>
        <td>${m.email }</td>

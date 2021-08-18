@@ -32,15 +32,15 @@
       <td>${m.pwd } </td>
       <td>${m.name } </td>
       <td>${m.email}</td>
-      <td><%=m.getAddr().getCity() %></td>
+      <td><%=m.getAddr().getCity() %></td>		<%-- getter. getter --%>
       <td><%=m.getAddr().getZipcode() %></td>   
    </tr>
    <tr align="center">
-      <td>${m.id } </td>
+      <td>${m.id } </td>						<%-- has-a 관계 --%>
       <td>${m.pwd } </td>
       <td>${m.name} </td>
       <td>${m.email}</td>
-<td>${m.addr.city}</td>
+	  <td>${m.addr.city}</td>
       <td>${m.addr.zipcode}</td>
    </tr>
 </table>
