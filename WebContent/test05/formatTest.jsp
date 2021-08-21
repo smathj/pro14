@@ -17,6 +17,7 @@
    <c:set var="price" value="100000000" />
    <fmt:formatNumber  value="${price}" type="number" var="priceNumber" />
     통화로 표현 시 :
+<%-- 									숫자를 원화로 표시 							세자리마다 콤파(디폴트true) 					--%>
       <fmt:formatNumber type="currency" currencySymbol="￦"   value="${price}" groupingUsed="true"/><br>
     퍼센트로 표현 시 : 
       <fmt:formatNumber value="${price}" type="percent"   groupingUsed="false" /><br>
@@ -29,11 +30,16 @@
      <fmt:formatDate  value="${now }" type="time" /><br>
      <fmt:formatDate value="${now }" type="both" dateStyle="full"
        timeStyle="full"  /><br>
+       
      <fmt:formatDate  value="${now }" pattern="YYYY-MM-dd :hh:mm:ss" /><br>
+     <fmt:formatDate  value="${now }" pattern="YYYY-MM-dd hh:mm:ss" /><br>
+     <fmt:formatDate  value="${now }" pattern="YYYY-MM-dd" /><br>
      
       <br><br>
       한국 현재 시간:
       <fmt:formatDate  value="${now }" type="both" dateStyle="full"  timeStyle="full"/><br><br>
+	  <%-- value는 포맷팅 당할 날짜 선택, "both"는 날짜와 시간 둘다 --%>
+
 
       <fmt:timeZone  value="America/New York" >
       뉴욕 현재 시간:<fmt:formatDate value="${now }" type="both" dateStyle="full" timeStyle="full"/><br>

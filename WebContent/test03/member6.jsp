@@ -20,7 +20,7 @@
     i=  ${i}   &nbsp;&nbsp;&nbsp;  반복횟수: ${loop.count} <br>
    </c:forEach>
  <br>
-   <c:forEach  var="i" begin="1" end="10" step="2" >
+   <c:forEach  var="i" begin="1" end="10" step="2" >	<%--1부터 2씩 증가 , 즉 홀수 --%>
         5 * ${i} = ${5*i}<br>
    </c:forEach>
 <br>
@@ -29,7 +29,7 @@
    </c:forEach>
 <br>
 <c:set var="fruits" value="사과, 파인애플, 바나나, 망고, 귤"  />
-<c:forTokens  var="token" items="${fruits}" delims="," >
+<c:forTokens  var="token" items="${fruits}" delims="," >	<%-- 구분자를 ,로하여 출력 --%>
     ${token} <br> 
 </c:forTokens>
 </body>

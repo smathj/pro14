@@ -17,7 +17,7 @@
   <title>조건문 실습</title>
 </head>
 <body>
-<c:if test="${true}">
+<c:if test="${true}">				<%-- JSTL의 if문  --%>
   <h1>항상 참입니다.</h1>
 </c:if>
 

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"
     isELIgnored="false" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>	<%--JSTL 포맷팅 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
   request.setCharacterEncoding("UTF-8");
@@ -14,7 +14,7 @@
 <body>
  
   
-<fmt:setLocale value="en_US" />
+<fmt:setLocale value="en_US" />	<%-- 미국으로 지역바꿈 --%>
 <%-- <fmt:setLocale value="ko_KR" /> --%>
 
 <h1>

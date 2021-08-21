@@ -40,13 +40,13 @@ MemberBean m2 = new MemberBean("ki", "4321", "기성용", "ki@test.com");
       <td>${membersMap.email }</td> 
 </tr>
     <tr align=”center”>
-      <td>${membersList[0].id}</td>
+      <td>${membersList[0].id}</td>		<%-- 단축된 변수 이름으로 인덱스에 접근하여 변수 출력 --%>
       <td>${membersList[0].pwd}</td>
       <td>${membersList[0].name}</td>
       <td>${membersList[0].email}</td>
    </tr>
    <tr align=”center”>
-      <td>${membersList[1].id}</td>
+      <td>${membersList[1].id}</td>		<%-- 단축된 변수 이름으로 인덱스에 접근하여 변수 출력 --%>
       <td>${membersList[1].pwd}</td>
       <td>${membersList[1].name}</td>
       <td>${membersList[1].email}</td>

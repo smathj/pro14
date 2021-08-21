@@ -16,9 +16,9 @@
 <input  type="submit" value="로그인" /> <input type="reset" value="다시입력"  />
    </form> 
    <br><br>
-   <%-- 
+<%-- 길었던 pageContext.request.contextPath를 변수에 입력하여 짧게 쓸수있다. 
 <a href="${pageContext.request.contextPath}/memberForm.jsp">회원등록하기</a>
- --%>
+--%>
       <a href="${contextPath}/test03/memberForm.jsp">회원등록하기</a>
    
 </body>

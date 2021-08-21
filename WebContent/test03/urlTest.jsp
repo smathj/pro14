@@ -4,7 +4,7 @@
     isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"  />
-<c:url var="url1"  value="/test01/member1.jsp"  >
+<c:url var="url1"  value="/test01/member1.jsp"  >	<%--추가로 넘길 파라미터는 c:param으로 담는다 --%>
   <c:param  name="id" value="hong" />
   <c:param  name="pwd" value="1234" />
   <c:param  name="name" value="홍길동" />

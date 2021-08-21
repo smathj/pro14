@@ -27,7 +27,7 @@
 </c:when>
 <c:otherwise >
     <tr align="center">
-      <td><c:out value="${param.id}" /></td>
+      <td><c:out value="${param.id}" /></td>	<%-- c:out 으로 출력! --%>
       <td><c:out value="${param.pwd}"  /></td>
       <td><c:out value="${param.name}" /></td>
       <td><c:out value="${param.email}" /></td>

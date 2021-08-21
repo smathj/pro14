@@ -14,7 +14,7 @@
 <body>
    <c:set var="score" value="${param.score }" />
    <h1>시험점수  <c:out  value="${score}" /></h1><br>
-   <c:choose>
+   <c:choose>	<%--Switch 문 처럼 사용한다 --%>
       <c:when test="${score>=90 && score<100 }">
           <h1>A학점입니다.</h1>
       </c:when>    

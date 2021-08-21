@@ -29,7 +29,7 @@ pageEncoding="UTF-8"
          <c:when test="${score>=60 && score<70 }">
              <h1>D학점입니다.</h1>
          </c:when>    
-         <c:otherwise>	
+         <c:otherwise>			<%--모든조건 충족 못시킬때~ --%>
              <h1>F학점입니다.</h1>
          </c:otherwise>    
       </c:choose>

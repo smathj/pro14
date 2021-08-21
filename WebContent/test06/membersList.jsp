@@ -22,7 +22,7 @@
       <td width="7%" ><b>가입일</b></td>
    </tr>  
 <c:choose>
-<%--
+<%--	[자바 코드 삭제]
  ArrayList list =request.getAttribute("membersList");
 --%>
 <c:when test="${ membersList==null}" >
